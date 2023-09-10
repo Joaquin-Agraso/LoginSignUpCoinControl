@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AutentificacionService } from './shared/servicios/autentificacion.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'login';
+  title = 'coincontrolfront';
+
+
+  constructor(private loginPro:AutentificacionService){
+
+  }
+
+  
 }
